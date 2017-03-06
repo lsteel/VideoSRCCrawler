@@ -1,0 +1,31 @@
+// out: ../styles/main.css, sourcemap: true, compress: true
+
+/* Mobile first queries */
+@import 'reset'
+@import 'fontface'
+
+$black = #000
+$white = #fff
+
+//Futura-Heavy          700
+//Futura-Book           400
+
+//remove this section before live production
+.screen-resolution
+  display block
+  position fixed
+  bottom 20px
+  right 20px
+  color $white
+//end section to remove
+
+
+html
+  -webkit-font-smoothing: antialiased;
+
+html, body
+  margin 0 auto
+  padding 0
+  font-family 'Lato', sans-serif
+
+@import 'media-queries'
